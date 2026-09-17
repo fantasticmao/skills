@@ -1,4 +1,4 @@
-# Skills
+# FantasticMao 的 skills 集
 
 [![skills.sh][badge-skills]][skills-sh] [![license][badge-license]][license]
 
@@ -6,7 +6,7 @@
 
 ## 这是什么
 
-本仓库收录 FantasticMao 在日常开发中使用的 agent skills。每个 skill 都是一份 `SKILL.md` 文档，说明某类重复出现的任务应当如何完成，支持 skill 的编码 agent 会按需加载。本仓库仅提供指令，不含可执行工具、依赖或 MCP server。
+FantasticMao 的 skills 集存放定制开发的 agent skills。每个 skill 都是一份 `SKILL.md` 文档，说明某类重复出现的任务应当如何完成，支持 skill 的编码 agent 会按需加载。本仓库仅提供指令，不含可执行工具、依赖或 MCP server。
 
 ## Skills
 

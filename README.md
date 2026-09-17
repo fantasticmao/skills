@@ -1,4 +1,4 @@
-# Skills
+# FantasticMao's Skills
 
 [![skills.sh][badge-skills]][skills-sh] [![license][badge-license]][license]
 
@@ -6,7 +6,7 @@ English | [简体中文][readme-zh]
 
 ## What is this
 
-This repository collects the agent skills FantasticMao uses in daily development. Each skill is a `SKILL.md` document that states how a recurring task should be carried out, and any coding agent with skill support loads it on demand. The repository provides instructions only: it ships no executable tool, dependency or MCP server.
+FantasticMao's Skills contains custom-developed agent skills. Each skill is a `SKILL.md` document that states how a recurring task should be carried out, and any coding agent with skill support loads it on demand. The repository provides instructions only: it ships no executable tool, dependency or MCP server.
 
 ## Skills
 
