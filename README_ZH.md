@@ -1,9 +1,9 @@
 # FantasticMao 的 skills 集
 
 [![skills.sh](https://skills.sh/b/fantasticmao/skills)](https://skills.sh/fantasticmao/skills)
-[![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![license](https://img.shields.io/github/license/fantasticmao/skills)](LICENSE)
 
-[English](README.md) | 简体中文
+README [English](README.md) | [中文](README_ZH.md)
 
 ## 这是什么
 
