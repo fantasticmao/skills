@@ -1,18 +1,19 @@
 # FantasticMao's Skills
 
-[![skills.sh][badge-skills]][skills-sh] [![license][badge-license]][license]
+[![skills.sh](https://skills.sh/b/fantasticmao/skills)](https://skills.sh/fantasticmao/skills)
+[![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
-English | [简体中文][readme-zh]
+English | [简体中文](README_ZH.md)
 
 ## What is this
 
-FantasticMao's Skills contains custom-developed agent skills. Each skill is a `SKILL.md` document that states how a recurring task should be carried out, and any coding agent with skill support loads it on demand. The repository provides instructions only: it ships no executable tool, dependency or MCP server.
+FantasticMao's Skills provides custom agent skills. Each skill is a `SKILL.md` document that states how a recurring task should be carried out, and a coding agent with skill support loads it on demand. It ships instructions only: no executable tool, dependency or MCP server.
 
-## Skills
+## Features
 
-- **[readme-style][skill-readme-style]** — Writes and refines a README with a consistent voice, structure and formatting, including bilingual versions.
+- **[readme-style](skills/readme-style)** — Writes and refines a README with a consistent voice, structure and formatting, including bilingual versions.
 
-## Install
+## Download and Install
 
 ```bash
 npx skills add fantasticmao/skills
@@ -30,24 +31,16 @@ npx skills add fantasticmao/skills -l
 ```
 
 > [!NOTE]
-> The command installs into the current project by default, and `-g` installs into the user directory instead. Use `-a` to limit the target agents, and `npx skills update` to pull later revisions.
+> The command installs into the current project by default, and `-g` installs into the user directory instead. `-a` limits the target agents, and `npx skills update` pulls later revisions.
 
 ## Quick Start
 
-An agent matches the request against the `description` of every installed skill and applies the matching one on its own. Naming the skill makes the choice explicit:
+An agent matches the request against the `description` of every installed skill and applies the matching one. Naming the skill makes the choice explicit:
 
 ```text
 Rewrite the README of this project with the readme-style skill.
 ```
 
-## How it works
+## License
 
-Every skill lives in its own directory under `skills/`, holding a `SKILL.md` whose YAML frontmatter carries a `name` and a `description`. This flat layout is one of the locations the [skills CLI][skills-cli] discovers, so installation copies the directory into the skills path of each selected agent. The frontmatter stays in the agent context while the body is read only once a request matches the description, which keeps an idle skill inexpensive.
-
-[badge-skills]: https://skills.sh/b/fantasticmao/skills
-[badge-license]: https://img.shields.io/badge/license-MIT-blue
-[skills-sh]: https://skills.sh/fantasticmao/skills
-[license]: LICENSE
-[readme-zh]: README_ZH.md
-[skill-readme-style]: skills/readme-style
-[skills-cli]: https://github.com/vercel-labs/skills
+FantasticMao's Skills is released under the [MIT License](LICENSE).

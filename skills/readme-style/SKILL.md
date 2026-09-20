@@ -37,7 +37,6 @@ Rewrite an existing README into the style below instead of preserving it: reorga
 ## Formatting
 
 - Give each list item a bold label and a short explanation. Within a list, keep the item lengths and the label lengths close, and keep every item on one line.
-- Use reference-style links where an inline URL would make item lengths uneven, and group the definitions at the end of the file.
 - Use GFM admonitions (`> [!NOTE]`, `> [!IMPORTANT]`, `> [!TIP]`) rather than a bold "Note:" prefix.
 
 ## Bilingual READMEs

@@ -1,18 +1,19 @@
 # FantasticMao 的 skills 集
 
-[![skills.sh][badge-skills]][skills-sh] [![license][badge-license]][license]
+[![skills.sh](https://skills.sh/b/fantasticmao/skills)](https://skills.sh/fantasticmao/skills)
+[![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
-[English][readme-en] | 简体中文
+[English](README.md) | 简体中文
 
 ## 这是什么
 
-FantasticMao 的 skills 集存放定制开发的 agent skills。每个 skill 都是一份 `SKILL.md` 文档，说明某类重复出现的任务应当如何完成，支持 skill 的编码 agent 会按需加载。本仓库仅提供指令，不含可执行工具、依赖或 MCP server。
+FantasticMao 的 skills 集提供定制开发的 agent skills。每个 skill 都是一份 `SKILL.md` 文档，说明某类重复出现的任务应当如何完成，支持 skill 的编码 agent 会按需加载。其中仅含指令，不含可执行工具、依赖或 MCP server。
 
-## Skills
+## 特性
 
-- **[readme-style][skill-readme-style]** — 以统一的语体、结构与格式撰写并改写 README，双语版本亦在其列。
+- **[readme-style](skills/readme-style)** — 以统一的语体、结构与格式撰写并改写 README，双语版本亦在其列。
 
-## 安装
+## 下载与安装
 
 ```bash
 npx skills add fantasticmao/skills
@@ -34,20 +35,12 @@ npx skills add fantasticmao/skills -l
 
 ## 快速开始
 
-agent 会将请求与已安装的每个 skill 的 `description` 相匹配，并自行应用命中的那一个。点明 skill 名称即可显式指定：
+agent 会将请求与已安装的每个 skill 的 `description` 相匹配，并应用命中的那一个。点明 skill 名称即可显式指定：
 
 ```text
 使用 readme-style skill 改写本项目的 README。
 ```
 
-## 工作原理
+## 许可证
 
-每个 skill 以独立目录置于 `skills/` 之下，其中的 `SKILL.md` 在 YAML frontmatter 里声明 `name` 与 `description`。该扁平布局正是 [skills CLI][skills-cli] 的发现路径之一，因此安装过程会将目录复制到所选各 agent 的 skills 路径。frontmatter 常驻于 agent 上下文，正文只在请求命中描述之后读取，闲置的 skill 因此开销很低。
-
-[badge-skills]: https://skills.sh/b/fantasticmao/skills
-[badge-license]: https://img.shields.io/badge/license-MIT-blue
-[skills-sh]: https://skills.sh/fantasticmao/skills
-[license]: LICENSE
-[readme-en]: README.md
-[skill-readme-style]: skills/readme-style
-[skills-cli]: https://github.com/vercel-labs/skills
+FantasticMao 的 skills 集以 [MIT License](LICENSE) 发布。
