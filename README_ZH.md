@@ -12,6 +12,7 @@ FantasticMao 的 skills 集提供定制开发的 agent skills。每个 skill 都
 ## 特性
 
 - **[readme-style](skills/readme-style)** — 以统一的语体、结构与格式撰写并改写 README，双语版本亦在其列。
+- **[technical-blog](skills/technical-blog)** — 以平实语体起草并改写技术博客，论断旁边放上可以核对的材料。
 
 ## 下载与安装
 

@@ -12,6 +12,7 @@ FantasticMao's Skills provides custom agent skills. Each skill is a `SKILL.md` d
 ## Features
 
 - **[readme-style](skills/readme-style)** — Writes and refines a README with a consistent voice, structure and formatting, including bilingual versions.
+- **[technical-blog](skills/technical-blog)** — Drafts and revises a technical blog post in a plain voice, with evidence beside each claim.
 
 ## Download and Install
 
